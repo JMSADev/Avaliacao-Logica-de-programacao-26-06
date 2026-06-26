@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro de lotes</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <h1>Cadastro de lotes</h1>
+
+    <form id="formLote">
+
+        <label>Descrição:</label>
+
+        <br>
+
+        <input type="text" id="descricao" required>
+
+        <br><br>
+
+        <label>Comprimento (m):</label>
+        
+        <br>
+
+        <input type="number" id="comprimento" required>
+
+        <br><br>
+
+        <label>Largura (m):</label>
+        
+        <br>
+
+        <input type="number" id="largura" required>
+
+        <br><br>
+        
+        <button type="submit">Cadastrar</button>
+
+    </form>
+
+    <hr>
+
+    <h1>Lotes Cadastrados</h1>
+
+    <table border="1">
+        <thead>
+            <tr>
+                <th>Descrição</th:>
+                <th>Comprimento</th>
+                <th>Largura</th>
+                <th>Área</th>
+                <th>Valor</th>
+                <th>Adicional</th>
+            </tr>
+        </thead>
+
+        <tbody id="listaLotes">
+
+        </tbody>
+    </table>
+    
+    <script src="js/script.js"></script>
+</body>
+</html>
